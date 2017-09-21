@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Устинов](https://up.htmlacademy.ru/adaptive/12/user/379393).
-* Наставник: `Неизвестно`.
+* Наставник: [Слава Милин](https://htmlacademy.ru/profile/id500603).
 
 ---
 
