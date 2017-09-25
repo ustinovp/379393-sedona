@@ -8,7 +8,6 @@
     <div class="background-wraper">
       <!--HEADER-->
       <header class="page-header">
-        <a class="page-header__logo"></a>
           <nav class="page-header__menu">
             <ul class="page-header__list">
               <li class="page-header__item"><a class="page-header__item-url" href="index.html">Главная</a></li>
@@ -18,7 +17,7 @@
             </ul>
             <a class="page-header__logo-wraper" href="index.html">
             <img class="page-header__logo" src="http://placehold.it/102x83" alt="Sedona" width="102" height="83"></a>
-            <button class="page-nav__mobile-menu-close" type="button">Закрыть</button>
+            <button class="page-header__mobile-menu-close" type="button">Закрыть</button>
           </nav>
             <div class="page-header__promo-text promo-text">
               <div class="promo-text">
@@ -31,40 +30,40 @@
     <main class="page-main">
       <section class="feedback">
         <header class="feedback__head">
-          <h1 class="feedback__header">Фото и видео</h1>
-          <p class="feedback__about">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <h2 class="feedback__header">Оставьте свой отзыв</h2>
+          <p class="feedback__about">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностей</p>
         </header>
       </section>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <section class="feedback form">
-          <h1 class="feedback__header">Представьтесь:</h1>
-          <label class="form__before" for="name">Имя*:</label><input type="text" required class="form__placeholder" id="name" placeholder="Иванов">
-          <label class="form__before" for="surname">Фамилия*:</label><input type="text" required class="form__placeholder" id="surname" placeholder="Иван">
-          <label class="form__before" for="patronymic">Отчество:</label><input type="text" class="form__placeholder" id="patronymic" placeholder="Иванович">
-        </section>
-        <section class="feedback form">
-          <h1 class="feedback__header">Контактная информация:</h1>
-          <label class="form__before--phone" for="phone">Контактный телефон*:</label><input type="phone" required class="form__placeholder" id="phone" placeholder="Введите телефон">
-          <label class="form__before--email" for="email">Электронная почта*:</label><input type="email" required class="form__placeholder" id="email" placeholder="Введите e-mail">
-        </section>
-        <section class="feedback form">
-          <h1 class="feedback__header">Ваше общее впечатление:</h1>
-          <label for="feedback__plus">Скорее положительное</label><input class="feedback__radioButton--checked" type="radio" checked id="feedback__plus">
-          <label for="feedback__minus">Скорее Отрицательное</label><input class="feedback__radioButton" type="radio" id="feedback__minus">
-          <label for="feedback__neutral">Затрудняюсь ответить</label><input class="feedback__radioButton" type="radio" id="feedback__neutral">
-        </section>
-        <section class="feedback form">
-          <h1 class="feedback__header">Посещенные достопримечательности:</h1>
-          <label for="feedback__bridge">Мост Дьявола</label><input class="feedback__checkbox--checked" type="checkbox" checked id="feedback__pridge">
-          <label for="feedback__park">Слайд-парк</label><input class="feedback__checkbox--checked" type="checkbox"  checked id="feedback__park">
-          <label for="feedback__hill">Гора-Колокол</label><input class="feedback__checkbox" type="checkbox" id="feedback__hill">
-          <label for="feedback__red-hills">Красные скалы</label><input class="feedback__checkbox--checked" type="checkbox" checked id="feedback__red-hills">
-        </section>
-        <section class="feedback form">
-          <h1 class="feedback__header">Опишите свои эмоции:</h1>
+        <div class="feedback form">
+          <h2 class="feedback__header">Представьтесь:</h2>
+          <label class="form__before" for="name">Имя*:</label><input type="text" required class="form__placeholder" name="name" placeholder="Иванов">
+          <label class="form__before" for="surname">Фамилия*:</label><input type="text" required class="form__placeholder" name="surname" placeholder="Иван">
+          <label class="form__before" for="patronymic">Отчество:</label><input type="text" class="form__placeholder" name="patronymic" placeholder="Иванович">
+        </div>
+        <div class="feedback form">
+          <h2 class="feedback__header">Контактная информация:</h2>
+          <label class="form__before--phone" for="phone">Контактный телефон*:</label><input type="phone" required class="form__placeholder" name="phone" placeholder="Введите телефон">
+          <label class="form__before--email" for="email">Электронная почта*:</label><input type="email" required class="form__placeholder" name="email" placeholder="Введите e-mail">
+        </div>
+        <div class="feedback form">
+          <h2 class="feedback__header">Ваше общее впечатление:</h2>
+          <label for="feedback__plus">Скорее положительное</label><input class="feedback__radio-button" type="radio" checked id="feedback__plus" name="impression" value="Скорее положительное">
+          <label for="feedback__minus">Скорее Отрицательное</label><input class="feedback__radio-button" type="radio" id="feedback__minus" name="impression" value="Скорее Отрицательное">
+          <label for="feedback__neutral">Затрудняюсь ответить</label><input class="feedback__radio-button" type="radio" id="feedback__neutral" name="impression"  value="Затрудняюсь ответить">
+        </div>
+        <div class="feedback form">
+          <h2 class="feedback__header">Посещенные достопримечательности:</h2>
+          <label for="feedback__bridge">Мост Дьявола</label><input class="feedback__checkbox" type="checkbox" checked name="feedback__pridge">
+          <label for="feedback__park">Слайд-парк</label><input class="feedback__checkbox" type="checkbox"  checked name="feedback__park">
+          <label for="feedback__hill">Гора-Колокол</label><input class="feedback__checkbox" type="checkbox" name="feedback__hill">
+          <label for="feedback__red-hills">Красные скалы</label><input class="feedback__checkbox" type="checkbox" checked name="feedback__red-hills">
+        </div>
+        <div class="feedback form">
+          <h2 class="feedback__header">Опишите свои эмоции:</h2>
           <textarea class="form__placeholder" placeholder="Опишите подробно свои восторги"></textarea>
-          <input type="button" class="button" value="ОТПРАВИТЬ ОТЗЫВ">
-        </section>
+        </div>
+        <input type="submit" class="button" value="ОТПРАВИТЬ ОТЗЫВ">
       </form>
     </main>
      <!--FOOTER-->
