@@ -1,23 +1,25 @@
-.page-footer__wrap {
+.page-footer__wraper {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
-.page-footer__hash {
-  margin: 0;
 
+.page-footer__hashtag {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
-.page-footer__socials {
+
+.page-footer__social {
   display: flex;
   justify-content: center;
 }
-.page-footer__copyright-wrap {
+
+.page-footer__copyright-wraper {
   display: flex;
   justify-content: center;
 
@@ -25,25 +27,31 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
 .page-footer__copyright {
   margin: 0;
   margin-right: 11px;
   align-self: center;
 }
-.page-footer__copyright-img {
+
+.page-footer__copyright-img-link {
   display: block;
+
   &:hover {
     fill: #81b3d2;
   }
+
   &:active {
     fill: rgba(0, 0, 0, 0.3);
   }
 }
+
 @media @mobile {
-  .page-footer__hash {
+  .page-footer__hashtag {
     padding-bottom: 35px;
   }
-  .page-footer__copyright-wrap {
+
+  .page-footer__copyright-wraper {
     margin-top: 40px;
     margin-bottom: 23px;
   }
