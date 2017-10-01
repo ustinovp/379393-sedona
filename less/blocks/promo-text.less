@@ -1,0 +1,46 @@
+.promo-text__slogan {
+  position: relative;
+  height: 389px;
+  width: 100%;
+  display: flex;
+
+  background-color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  box-sizing: border-box;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 28px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &--lower /*на form и photo*/ {
+    height: 158px;
+    background-size: auto 389px;
+  }
+}
+.promo-text__title {
+  margin: auto;
+  padding-bottom: 20px;
+  &--index {
+    padding-bottom: 0;
+  }
+}
+@media @mobile {
+  .promo-text__title {
+    width: 229px;
+    &--index {
+      width: 282px;
+      height: 214px;
+    }
+  }
+}
