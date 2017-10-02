@@ -1,0 +1,131 @@
+.page-header__wraper {
+  .container();
+}
+
+.page-header__menu {
+  position: relative;
+}
+
+.page-header__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header__item-url {
+  display: block;
+  padding: 8px 0;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+
+  box-sizing: border-box;
+}
+
+.page-header__logo {
+  display: block;
+  width: 102px;
+  height: 83px;
+}
+
+.page-header__logo-wraper {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -51px;
+}
+
+@media @mobile {
+  .page-header__menu {
+    padding-bottom: 56px;
+  }
+
+  .page-header__item-url {
+    padding: 7px 0;
+    border-top: 1px solid rgba(1, 1, 1, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    color: #ffffff;
+
+    background-color: #81b3d2;
+  }
+
+  .page-header__item-url:not(.page-header__item-url--active) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .page-header__mobile-menu-close {
+    position: absolute;
+
+    right: 20px;
+
+    width: 23px;
+    height: 23px;
+    border: 0;
+    padding: 0;
+
+    font-size: 0;
+
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .page-header__menu--opened .page-header__mobile-menu-close {
+    top: 17px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: 10px;
+
+      width: 27px;
+      height: 4px;
+
+      background-color: #ffffff;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .page-header__menu--closed .page-header__mobile-menu-close {
+    bottom: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: 4px;
+
+      background-color: #81b3d2;
+      box-shadow: 0 8px 0 0 #81b3d2,
+      0 16px 0 0 #81b3d2;
+    }
+  }
+
+  .page-header__menu--closed > .page-header__list {
+    display: none;
+  }
+}
+
