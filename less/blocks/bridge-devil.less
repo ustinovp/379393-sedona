@@ -1,0 +1,65 @@
+.bridge-devil-wraper {
+  display: flex;
+  flex-direction: column;
+  .container();
+}
+
+.bridge-devil__title-block-wraper {
+  padding: 40px 20px;
+  height: 191px;
+  background-color: #81b3d2;
+  box-sizing: border-box;
+}
+
+.bridge-devil__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  width: 280px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bridge-devil__title {
+  margin: 0;
+  align-self: center;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.bridge-devil__number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.bridge-devil__text {
+  width: 100%;
+  margin: 0;
+  align-self: center;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.bridge-devil__img img {
+  display: block;
+  height: 256px;
+  width: 100%;
+}
+
+@media @mobile {
+  .bridge-devil__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bridge-devil__img img {
+    height: 260px;
+    width: 320px;
+  }
+}

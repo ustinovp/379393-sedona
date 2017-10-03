@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="background-wraper">
-      <!--HEADER-->
+    <!--HEADER-->
       <header class="page-header">
         <div class="main-header__wraper">
           <nav class="page-header__menu page-header__menu--opened">
@@ -23,14 +23,13 @@
               <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Sedona" width="102">
             </a>
           </nav>
-            <div class="page-header__promo-text promo-text">
-              <div class="promo-text__slogan">
-                <img class="promo-text__title promo-text__text--index" src="img/text-sedona-index.svg" alt="Sedona" width="280">
-              </div>
+          <div class="page-header__promo-text promo-text">
+              <div class="promo-text__slogan promo-text__slogan--index">
+              <img class="promo-text__title" src="img/text-sedona-index.svg" alt="Sedona" width="282" height="214">
             </div>
-        </header>
+          </div>
         </div>
-      </div>
+      </header>
     <!--MAIN-->
       <div class="page-main">
         <div class="page-main__wraper">
@@ -40,12 +39,18 @@
       </div>
       <section class="good-city">
         <div class="good-city__wraper">
-            <h2 class="good-city__header">Настоящий городок</h2>
-            <span class="good-city__number">– №1 –</span>
-            <p class="good-city__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="good-city__title-block-wraper">
+            <div class="good-city__title-block">
+              <header class="good-city__header">
+              <h2 class="good-city__title">Настоящий городок</h2>
+              <span class="good-city__number">– №1 –</span>
+              <p class="good-city__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </header>
+            </div>
+          </div>
         </div>
-        <div class="good-city__wraper">
-            <img class="good-city__img" src="img/main-city-mobile@1x.jpg">
+        <div class="good-city__img">
+            <img src="img/main-city-mobile@1x.jpg">
         </div>
         <div class="good-city__benefits">
           <div class="good-city__benefits-item">
@@ -67,28 +72,32 @@
       </section>
       <section class="bridge-devil">
           <div class="bridge-devil__wraper">
-              <h2 class="bridge-devil__header">Там есть мост дьявола</h2>
+              <div class="bridge-devil__title-block-wraper">
+                  <header class="bridge-devil__header">
+              <h2 class="bridge-devil__title">Там есть мост дьявола</h2>
               <span class="bridge-devil__number">– №2 –</span>
               <p class="bridge-devil__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </header>
+            </div>
+          <div class="bridge-devil__img">
+              <img src="img/main-bridge-mobile@1x.jpg">
           </div>
-          <div class="bridge-devil__wraper">
-              <img class="bridge-devil__img" src="img/main-bridge-mobile@1x.jpg">
           </div>
         </section>
       <section class="benefits">
           <div class="benefits_wraper">
             <div class="benefits__item">
-              <h3 class="benefits__item-header">Небольшая площадь</h3>
+              <h3 class="benefits__item-title">Небольшая площадь</h3>
               <span class="benefits__number">– №3 –</span>
               <p class="benefits__item-text">Все интересные места находятся очень близко</p>
             </div>
             <div class="benefits__item">
-              <h3 class="benefits__item-header">Красивая дорога</h3>
+              <h3 class="benefits__item-title">Красивая дорога</h3>
               <span class="benefits__number">– №4 –</span>
               <p class="benefits__item-text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
             </div>
             <div class="benefits__item">
-              <h3 class="benefits__item-header">Мало туристов</h3>
+              <h3 class="benefits__item-title">Мало туристов</h3>
               <span class="benefits__number">– №5 –</span>
               <p class="benefits__item-text">Большинство едет в гранд каньон и толпится там</p>
             </div>
@@ -96,13 +105,13 @@
         </section>
         <section class="search">
           <div class="search__wraper">
-            <h2 class="search__header">Заинтересовались?</h2>
+            <h2 class="search__title">Заинтересовались?</h2>
             <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a class="search__button" href="#">Найти гостиницу</a>
           </div>
           <div class="map">
             <div class="map__wraper">
-              <img class="map__google" src="http://placehold.it/320x350" width="320" height="350"></img>
+                <div class="map__google"></div>
             </div>
           </div>
         </section>
@@ -128,5 +137,6 @@
               </div>
             </div>
       </footer>
+    </div>
     </body>
   </html>

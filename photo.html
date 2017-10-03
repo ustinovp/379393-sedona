@@ -2,31 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <div class="background-wraper">
-      <!--HEADER-->
+    <!--HEADER-->
       <header class="page-header">
-          <nav class="page-header__menu">
+        <div class="main-header__wraper">
+          <nav class="page-header__menu page-header__menu--opened">
             <ul class="page-header__list">
               <li class="page-header__item"><a class="page-header__item-url" href="index.html">Главная</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="photo.html">Фото и видео</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="form.html">Форма отзыва</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="#">HTML Academy</a></li>
             </ul>
-            <a class="page-header__logo-wraper" href="index.html">
-            <img class="page-header__logo" src="http://placehold.it/102x83" alt="Sedona" width="102" height="83"></a>
-            <button class="page-header__mobile-menu-close" type="button">Закрыть</button>
-          </nav>
-            <div class="page-header__promo-text promo-text">
-              <div class="promo-text">
-                <img class="promo-text__text-index" src="http://placehold.it/280x47" alt="Sedona" width="280" height="47">
-              </div>
-            </div>
-        </header>
+          </ul>
+          <button class="page-header__mobile-menu-close" type="button">Закрыть</button>
+          <a class="page-header__logo-wraper" href="index.html">
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Sedona" width="102">
+          </a>
+        </nav>
+        <div class="page-header__promo-text promo-text">
+          <div class="promo-text__slogan promo-text__slogan--lower">
+            <img class="promo-text__title" src="img/text-sedona.svg" alt="Sedona" width="282" height="214">
+          </div>
+        </div>
       </div>
+    </header>
     <!--MAIN-->
     <main class="page-main">
       <section class="media">
@@ -130,20 +134,25 @@
     </main>
     <!--FOOTER-->
     <footer class="page-footer">
-      <div class="page-footer__wraper">
-        <p class="page-footer__hashtag">#visitsedona</p>
-          <div class="page-footer__social social">
-            <div class="social__wrap">
-              <a class="social__link" href="#">Twit</a>
-                <a class="social__link" href="#">FB</a>
-                <a class="social__link" href="#">Youtube</a>
+        <div class="page-footer__wraper">
+          <p class="page-footer__hashtag">#visitsedona</p>
+            <div class="page-footer__social social">
+              <div class="social__wraper">
+                <a class="social__link" href="#">Twit
+                  <img class="social__link-icon" src="/img/icon-twitter.svg"></a>
+                <a class="social__link" href="#">FB
+                  <img class="social__link-icon" src="/img/icon-facebook.svg"></a>
+                <a class="social__link" href="#">Youtube
+                  <img class="social__link-icon" src="/img/icon-youtube.svg"></a>
+              </div>
+              </div>
+              <div class="page-footer__copyright-wraper">
+                <p class="page-footer__copyright">Разработано</p>
+                <a class="page-footer__copyright-img-link" href="https://htmlacademy.ru">
+                  <img class="page-footer__copyright-img-link" src="/img/htmlacademy.svg">
+                </a>
               </div>
             </div>
-            <div class="page-footer__copyright-wraper">
-              <p class="page-footer__copyright">Разработано</p>
-              <a class="page-footer__copyright-img-link" href="https://htmlacademy.ru"></a>
-            </div>
-          </div>
-    </footer>
-  </body>
+      </footer>
+    </div>
 </html>

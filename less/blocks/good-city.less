@@ -1,0 +1,135 @@
+.good-city__wraper {
+  .container();
+}
+
+.good-city__title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #81b3d2;
+}
+
+.good-city__header {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.good-city__title {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.good-city__number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.good-city__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.good-city__img {
+  height: 256px;
+}
+
+.good-city__benefits-item {
+  position: relative;
+}
+
+.good-city__benefits-item-icon {
+  position: absolute;
+  left: 1px;
+  top: -5px;
+}
+
+.good-city__benefits-item-header {
+  margin: 0;
+  padding-bottom: 14px;
+
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.good-city__benefits-item-text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@media @mobile {
+  .good-city__title-block {
+    position: relative;
+    width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -24px;
+      height: 40px;
+
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .good-city__header {
+    width: 280px;
+    min-height: 196px;
+    padding-top: 55px;
+    padding-bottom: 29px;
+  }
+
+  .good-city__img {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .good-city__img img {
+    display: block;
+    height: 260px;
+    width: 320px;
+  }
+
+  .good-city__benefits {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    width: 280px;
+    padding: 0 20px;
+    padding-top: 35px;
+    padding-bottom: 37px;
+  }
+
+  .good-city__benefits-item {
+    padding-bottom: 28px;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+
+  .good-city__benefits-item:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
