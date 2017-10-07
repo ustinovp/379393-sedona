@@ -35,3 +35,68 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+@media @tablet {
+  .feedback__wraper {
+    max-width: 960px;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__form-effect {
+    position: relative;
+    margin-bottom: 66px;
+    order: -7;
+    width: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: #dbdbdb;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .feedback__form-profil {
+    order: -6;
+    width: 50%;
+  }
+
+  .feedback__form-contact {
+    order: -5;
+    width: 100%;
+  }
+
+  .feedback__form-visited {
+    order: -4;
+    width: 100%;
+  }
+
+  .feedback__form-emot {
+    order: -3;
+    width: 100%;
+  }
+
+  .feedback__btn {
+    margin-bottom: 96px;
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media @desktop {
+  .feedback__wraper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .feedback__btn {
+    margin-bottom: 101px;
+  }
+}

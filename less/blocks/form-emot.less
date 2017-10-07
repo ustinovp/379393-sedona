@@ -61,3 +61,51 @@
     padding-right: 20px;
   }
 }
+
+@media @tablet {
+  .form-emot__wraper {
+    padding-bottom: 60px;
+
+    &::before {
+      content: "* – обязательные поля";
+      position: absolute;
+      bottom: -42px;
+      right: 0;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #333333;
+      text-transform: uppercase;
+    }
+  }
+
+  .form-emot__header {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 55px;
+    font-size: 21px;
+    align-self: center;
+    background-color: #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: 30px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+}
+
+@media @desktop {
+  .form-emot__wraper {
+    padding-bottom: 58px;
+  }
+
+  .form-emot__header {
+    padding-bottom: 57px;
+  }
+}
