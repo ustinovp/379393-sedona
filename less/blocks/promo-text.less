@@ -49,3 +49,55 @@
     }
   }
 }
+
+@media @tablet {
+  .promo-text__slogan {
+    height: 518px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+
+    &--lower {
+      height: 290px;
+      background-size: auto 518px;
+    }
+
+    &::after {
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-mobile.svg");
+    }
+  }
+
+  .promo-text__logo-title {
+    height: 78px;
+    width: 458px;
+
+    &--index {
+      width: 460px;
+      height: 350px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media @desktop {
+  .promo-text__slogan {
+    &--lower {
+      height: 301px;
+      background-size: auto 518px;
+    }
+
+    &::after {
+      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      left: -1px;
+    }
+  }
+
+  .promo-text__logo-title {
+    width: 461px;
+    height: 80px;
+
+    &--index {
+      width: 460px;
+      height: 350px;
+    }
+  }
+}
