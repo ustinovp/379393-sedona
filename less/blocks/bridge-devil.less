@@ -46,20 +46,59 @@
   line-height: 21px;
 }
 
-.bridge-devil__img img {
+.bridge-devil__image img {
   display: block;
   height: 256px;
   width: 100%;
 }
 
 @media @mobile {
-  .bridge-devil__img {
+  .bridge-devil__image {
     display: flex;
     justify-content: center;
   }
 
-  .bridge-devil__img img {
+  .bridge-devil__image img {
     height: 260px;
     width: 320px;
+  }
+}
+
+@media @tablet {
+  .bridge-devil__wraper {
+    display: flex;
+    flex-direction: row;
+    height: 256px;
+  }
+
+  .bridge-devil__title-block-wraper {
+    width: 33%;
+    height: 100%;
+    order: 2;
+    padding: 45px;
+  }
+
+  .bridge-devil__header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bridge-devil__title {
+    width: 151px;
+    font-size: 21px;
+  }
+
+  .bridge-devil__text {
+    max-width: 220px;
+  }
+
+  .bridge-devil__image {
+    width: 67%;
+  }
+}
+
+@media @desktop {
+  .bridge-devil__title-block-wraper {
+    padding: 55px;
   }
 }

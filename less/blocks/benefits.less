@@ -1,4 +1,4 @@
-.benefits_wraper {
+.benefits__wraper {
   background-color: #eeeeee;
   .container();
 }
@@ -51,5 +51,34 @@
 
   .benefits__item:last-of-type {
     border-bottom-color: transparent;
+  }
+}
+
+@media @tablet {
+  .benefits__wraper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits__item {
+    width: 33%;
+    height: 256px;
+    padding: 0 49px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .benefits__item-title {
+    width: 160px;
+    align-self: center;
+    font-size: 21px;
+  }
+}
+
+@media @desktop {
+  .benefits__item {
+    padding-bottom: 64px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }

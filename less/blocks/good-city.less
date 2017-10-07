@@ -43,7 +43,7 @@
   line-height: 21px;
 }
 
-.good-city__img {
+.good-city__image {
   height: 256px;
 }
 
@@ -100,13 +100,13 @@
     padding-bottom: 29px;
   }
 
-  .good-city__img {
+  .good-city__image {
     height: 260px;
     display: flex;
     justify-content: center;
   }
 
-  .good-city__img img {
+  .good-city__image img {
     display: block;
     height: 260px;
     width: 320px;
@@ -131,5 +131,94 @@
 
   .good-city__benefits-item:last-of-type {
     padding-bottom: 0;
+  }
+}
+
+@media @tablet {
+  .good-city__title-block-wraper {
+    display: flex;
+  }
+
+  .good-city__title-block {
+    width: 33%;
+    height: 256px;
+  }
+
+  .good-city__header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 45px 41px;
+  }
+
+  .good-city__title {
+    font-size: 21px;
+    align-self: center;
+  }
+
+  .good-city__image {
+    width: 67%;
+  }
+
+  .good-city__image img {
+    width: 100%;
+    height: 256px;
+  }
+
+  .good-city__benefits {
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .good-city__benefits-item {
+    width: 33%;
+    padding: 0 45px;
+    padding-top: 160px;
+  }
+
+  .good-city__benefits-item:nth-of-type(2) {
+    order: 3;
+  }
+
+  .good-city__benefits-item-icon {
+    left: 50%;
+    top: 59px;
+  }
+
+  .good-city__benefits-item:nth-of-type(1) .good-city__benefits-item-icon {
+    width: 75px;
+    height: 72px;
+    margin-left: -38px;
+  }
+
+  .good-city__benefits-item:nth-of-type(2) .good-city__benefits-item-icon {
+    width: 64px;
+    height: 75px;
+    margin-left: -38px;
+  }
+
+  .good-city__benefits-item:nth-of-type(3) .good-city__benefits-item-icon {
+    width: 77px;
+    height: 68px;
+    margin-left: -39px;
+  }
+
+  .good-city__benefits-item-header {
+    padding-bottom: 20px;
+    font-size: 21px;
+  }
+}
+
+@media @desktop {
+  .good-city__header {
+    padding: 52px;
+  }
+
+  .good-city__benefits-item {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
