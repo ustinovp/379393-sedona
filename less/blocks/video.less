@@ -1,0 +1,141 @@
+.video__wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 430px;
+  padding-top: 33px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+}
+
+.video__title {
+  margin: 0;
+  padding-bottom: 26px;
+
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.video__text {
+  margin: 0;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.video__video-player {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-bottom: 140px;
+
+  background-color: #ffffff;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 201px;
+  box-sizing: border-box;
+}
+
+.video__wraper-player {
+  bottom: 0;
+
+  display: flex;
+  margin-top: auto;
+  order: 1;
+  width: 100%;
+  height: 45px;
+  padding: 0 22px;
+
+  background-color: rgba(0, 0, 0, 0.6 );
+  box-sizing: border-box;
+}
+
+.video__line-player {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.video__dot-player {
+  position: relative;
+  left: 15%;
+  top: -3px;
+  width: 9px;
+  height: 9px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video__userbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video__replay {
+  padding: 0;
+  border: 0;
+  width: 16px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video__subtitle {
+  padding: 0;
+  border: 0;
+  margin-right: 31px;
+  margin-left: auto;
+  width: 32px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video__full-screan {
+  padding: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media @mobile {
+  .video__wraper {
+    width: 240px;
+  }
+
+  .video__video-player {
+    width: 320px;
+    height: 201px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video__userbar {
+    position: relative;
+    top: 100%;
+    height: 66px;
+    padding: 0 24px;
+    padding-top: 23px;
+
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+  }
+}
