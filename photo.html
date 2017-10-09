@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -9,26 +10,27 @@
     <div class="background-wraper">
       <!--HEADER-->
       <header class="page-header">
-          <nav class="page-header__menu">
+        <div class="main-header__wraper">
+          <nav class="page-header__menu page-header__menu--opened">
             <ul class="page-header__list">
               <li class="page-header__item"><a class="page-header__item-url" href="index.html">Главная</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="photo.html">Фото и видео</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="form.html">Форма отзыва</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="#">HTML Academy</a></li>
             </ul>
-            <a class="page-header__logo-wraper" href="index.html">
-            <img class="page-header__logo" src="http://placehold.it/102x83" alt="Sedona" width="102" height="83"></a>
             <button class="page-header__mobile-menu-close" type="button">Закрыть</button>
+            <a class="page-header__logo-wraper" href="index.html">
+              <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Sedona" width="102">
+            </a>
           </nav>
-            <div class="page-header__promo-text promo-text">
-              <div class="promo-text">
-                <img class="promo-text__text-index" src="http://placehold.it/280x47" alt="Sedona" width="280" height="47">
-              </div>
+          <div class="page-header__promo-text promo-text">
+            <div class="promo-text__slogan promo-text__slogan--lower">
+              <img class="promo-text__title" src="img/text-sedona.svg" alt="Sedona" width="282" height="214">
             </div>
-        </header>
-      </div>
-    <!--MAIN-->
-    <main class="page-main">
+          </div>
+        </div>
+      </header>
+      <!--MAIN-->
       <section class="media">
         <div class="media__wraper">
           <header class="media__head">
@@ -40,7 +42,7 @@
               <figure class="foto__item">
                 <div class="foto__img-wraper">
                   <picture>
-                    <img class="foto__img" src="http://placehold.it/280x280">
+                    <img class="foto__img" src="img/photo-sunset-mobile@1x.jpg">
                   </picture>
                 </div>
                 <figcaption class="foto__more">
@@ -49,7 +51,9 @@
                     <p class="foto__text">Автор фото: Борис</p>
                   </div>
                   <div class="foto__number-likes">
-                    <button class="foto__number-likes-btn" type="button"></button>
+                    <button class="foto__number-likes-btn" type="button">
+                      <!-- svg -->
+                    </button>
                     <button class="foto__number-like" type="button">1350</button>
                   </div>
                 </figcaption>
@@ -57,7 +61,7 @@
               <figure class="foto__item">
                 <div class="foto__img-wraper">
                   <picture>
-                    <img class="foto__img" src="http://placehold.it/280x280">
+                    <img class="foto__img" src="img/photo-cactus-mobile@1x.jpg">
                   </picture>
                 </div>
                 <figcaption class="foto__more">
@@ -66,7 +70,9 @@
                     <p class="foto__text">Автор фото: Сергей</p>
                   </div>
                   <div class="foto__number-likes">
-                    <button class="foto__number-likes-btn" type="button"></button>
+                    <button class="foto__number-likes-btn" type="button">
+                      <!-- svg -->
+                    </button>
                     <button class="foto__number-like" type="button">143</button>
                   </div>
                 </figcaption>
@@ -74,76 +80,99 @@
               <figure class="foto__item">
                 <div class="foto__img-wraper">
                   <picture>
-                    <img class="foto__img" src="http://placehold.it/280x280">
+                    <img class="foto__img" src="img/photo-roads-mobile@1x.jpg">
                   </picture>
                 </div>
-              <figcaption class="foto__more">
-                <div class="foto__more-text">
-                  <h2 class="foto__title">Дорога на север</h2>
-                  <p class="foto__text">Автор фото: Петр</p>
-                </div>
-                <div class="foto__number-likes">
-                  <button class="foto__number-likes-btn" type="button"></button>
-                  <button class="foto__number-like" type="button">96</button>
-                </div>
-              </figcaption>
+                <figcaption class="foto__more">
+                  <div class="foto__more-text">
+                    <h2 class="foto__title">Дорога на север</h2>
+                    <p class="foto__text">Автор фото: Петр</p>
+                  </div>
+                  <div class="foto__number-likes">
+                    <button class="foto__number-likes-btn" type="button"></button>
+                      <!-- svg -->
+                    <button class="foto__number-like" type="button">96</button>
+                  </div>
+                </figcaption>
               </figure>
               <figure class="foto__item">
-              <div class="foto__img-wraper">
-                    <picture>
-                      <img class="foto__img" src="http://placehold.it/280x280">
-                    </picture>
+                <div class="foto__img-wraper">
+                  <picture>
+                    <img class="foto__img" src="img/photo-bridge-mobile@1x.jpg">
+                  </picture>
+                </div>
+                <figcaption class="foto__more">
+                  <div class="foto__more-text">
+                    <h2 class="foto__title">Мост дьявола</h2>
+                    <p class="foto__text">Автор фото: Антон</p>
                   </div>
-                  <figcaption class="foto__more">
-                    <div class="foto__more-text">
-                      <h2 class="foto__title">Мост дьявола</h2>
-                      <p class="foto__text">Автор фото: Антон</p>
-                    </div>
-                    <div class="foto__number-likes">
-                      <button class="foto__number-likes-btn" type="button"></button>
+                  <div class="foto__number-likes">
+                    <button class="foto__number-likes-btn" type="button">
+                      <!-- svg -->
+                    </button>
                     <button class="foto__number-like" type="button">254</button>
                   </div>
                 </figcaption>
               </figure>
             </div>
-        </div>
-      </section>
-      <section class="video">
-          <div class="video__wraper">
-            <h2 class="video__title">Все еще сомневаетесь?</h2>
-            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-          <div class="video__video-player">
+          </section>
+          <section class="video">
             <div class="video__wraper">
-              <div class="video__line">
-                <div class="video__dot">
+              <h2 class="video__title">Все еще сомневаетесь?</h2>
+              <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            </div>
+            <div class="video__video-player">
+              <div class="video__wraper-player">
+                <div class="video__line-player">
+                  <div class="video__dot-player">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="video__userbar">
-              <button class="video__replay" type="button">Повторить</button>
-              <button class="video__subtitle" type="button">Отобразить субтитры</button>
-              <button class="video__fullscrean" type="button">На весь экран</button>
-            </div>
-          </div>
-        </section>
-    </main>
-    <!--FOOTER-->
-    <footer class="page-footer">
-      <div class="page-footer__wraper">
-        <p class="page-footer__hashtag">#visitsedona</p>
-          <div class="page-footer__social social">
-            <div class="social__wrap">
-              <a class="social__link" href="#">Twit</a>
-                <a class="social__link" href="#">FB</a>
-                <a class="social__link" href="#">Youtube</a>
+              <div class="video__userbar">
+                <button class="video__replay" type="button">
+                  <img class="video__replay-icon" src="img/icon-video-replay.svg" alt="Повторить" width="16" height="20">
+                </button>
+                <button class="video__subtitle" type="button">
+                  <img class="video__subtitle-icon" src="img/icon-video-subtitles.svg" alt="Субтитры" width="32" height="20">
+                </button>
+                <button class="video__fullscreen" type="button">
+                  <img class="video__fullscreen-icon" src="img/icon-video-fullscreen.svg" alt="На весь экран" width="20" height="20">
+                </button>
               </div>
             </div>
-            <div class="page-footer__copyright-wraper">
-              <p class="page-footer__copyright">Разработано</p>
-              <a class="page-footer__copyright-img-link" href="https://htmlacademy.ru"></a>
+          </section>
+        </div>
+      </section>
+      <!--FOOTER-->
+      <footer class="page-footer">
+        <div class="page-footer__wraper">
+          <p class="page-footer__hashtag">#visitsedona</p>
+          <div class="page-footer__social social">
+            <div class="social__wraper">
+              <a class="social__link" href="#">Twit
+                <svg class="social__link-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                </svg>
+              </a>
+              <a class="social__link" href="#">FB
+                <svg class="social__link-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                  <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+                </svg>
+              <a class="social__link" href="#">Youtube
+                <svg class="social__link-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                  <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+                </svg>
+              </a>
             </div>
           </div>
-    </footer>
+          <div class="page-footer__copyright-wraper">
+            <p class="page-footer__copyright">Разработано</p>
+            <a href="https://htmlacademy.ru">
+              <svg class="page-footer__copyright-img-link"  width="27" height="37" viewBox="0 0 26.943 34.09" id="logo-htmlacademy" width="100%" height="100%"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"></path></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

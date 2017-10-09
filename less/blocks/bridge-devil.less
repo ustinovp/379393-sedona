@@ -1,0 +1,104 @@
+.bridge-devil-wraper {
+  display: flex;
+  flex-direction: column;
+  .container();
+}
+
+.bridge-devil__title-block-wraper {
+  padding: 40px 20px;
+  height: 191px;
+  background-color: #81b3d2;
+  box-sizing: border-box;
+}
+
+.bridge-devil__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100%;
+  width: 280px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bridge-devil__title {
+  margin: 0;
+  align-self: center;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.bridge-devil__number {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.bridge-devil__text {
+  width: 100%;
+  margin: 0;
+  align-self: center;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.bridge-devil__image img {
+  display: block;
+  height: 256px;
+  width: 100%;
+}
+
+@media @mobile {
+  .bridge-devil__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bridge-devil__image img {
+    height: 260px;
+    width: 320px;
+  }
+}
+
+@media @tablet {
+  .bridge-devil__wraper {
+    display: flex;
+    flex-direction: row;
+    height: 256px;
+  }
+
+  .bridge-devil__title-block-wraper {
+    width: 33%;
+    height: 100%;
+    order: 2;
+    padding: 45px;
+  }
+
+  .bridge-devil__header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bridge-devil__title {
+    width: 151px;
+    font-size: 21px;
+  }
+
+  .bridge-devil__text {
+    max-width: 220px;
+  }
+
+  .bridge-devil__image {
+    width: 67%;
+  }
+}
+
+@media @desktop {
+  .bridge-devil__title-block-wraper {
+    padding: 55px;
+  }
+}
