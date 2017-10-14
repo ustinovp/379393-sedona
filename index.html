@@ -20,12 +20,16 @@
             </ul>
             <button class="page-header__mobile-menu-close" type="button">Закрыть</button>
             <a class="page-header__logo-wraper" href="index.html">
-              <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Sedona" width="102">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Sedona" width="102" height="83">
+              </picture>
             </a>
           </nav>
           <div class="page-header__promo-text promo-text">
-              <div class="promo-text__slogan promo-text__slogan--index">
-              <img class="promo-text__title" src="img/text-sedona-index.svg" alt="Sedona" width="282" height="214">
+              <div class="promo-text__slogan ">
+              <img class="promo-text__title promo-text__logo-title--index" src="img/text-sedona-index.svg" alt="Sedona" width="282" height="214">
             </div>
           </div>
         </div>
@@ -48,7 +52,11 @@
               </header>
             </div>
             <div class="good-city__image">
-              <img src="img/main-city-mobile@1x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x">
+              </picture>
             </div>
           </div>
         </div>
@@ -80,7 +88,11 @@
             </header>
           </div>
           <div class="bridge-devil__image">
-            <img src="img/main-bridge-mobile@1x.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x">
+            </picture>
           </div>
         </div>
       </section>
@@ -112,6 +124,11 @@
       </section>
       <div class="map">
         <div class="map__wraper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x">
+            </picture>
           <div class="map__google"></div>
         </div>
       </div>
