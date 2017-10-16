@@ -16,7 +16,7 @@
             <ul class="page-header__list">
               <li class="page-header__item"><a class="page-header__item-url" href="index.html">Главная</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="photo.html">Фото и видео</a></li>
-              <li class="page-header__item"><a class="page-header__item-url" href="form.html">Форма отзыва</a></li>
+              <li class="page-header__item"><a class="page-header__item-url page-header__item-url--active" href="form.html">Форма отзыва</a></li>
               <li class="page-header__item"><a class="page-header__item-url" href="#">HTML Academy</a></li>
             </ul>
             <button class="page-header__mobile-menu-close" type="button">Закрыть</button>
@@ -50,16 +50,16 @@
                 <h2 class="form-profil__header ">Представьтесь:</h2>
                 <div class="form-profil__list">
                   <label class="form-profil__label" for="name">
-                    <span class="person__label-text">Имя*:</span>
-                    <input type="text" required class="form-profil__placeholder" name="name" placeholder="Иван">
+                    <span class="form-contact__label-text">Имя*:</span>
+                    <input type="text" required class="form-profil__placeholder" name="name" placeholder="Петр">
                   </label>
                   <label class="form-profil__label" for="surname">
-                    <span class="person__label-text">Фамилия*:</span>
+                    <span class="form-contact__label-text">Фамилия*:</span>
                     <input type="text" required class="form-profil__placeholder" name="surname" placeholder="Иванов">
                   </label>
                   <label class="form-profil__label" for="patronymic">
-                    <span class="person__label-text">Отчество:</span>
-                    <input type="text" class="form-profil__placeholder" name="patronymic" placeholder="Иванович">
+                    <span class="form-contact__label-text">Отчество:</span>
+                    <input type="text" class="form-profil__placeholder" name="patronymic" placeholder="Александрович">
                   </label>
                 </div>
               </div>
@@ -69,7 +69,7 @@
                 <h2 class="form-contact__header">Контактная информация:</h2>
                 <div class="form-contact__phone-email">
                   <label class="form-contact__label" for="phone">
-                    <span class="form-contact__label-text">Телефон*:</span>
+                    <span class="form-contact__label-text">Контактный телефон*:</span>
                     <span class="form-contact__input-wrap">
                       <input type="phone" required class="form-contact__placeholder" name="phone" placeholder="Введите телефон">
                     </span>
@@ -93,7 +93,7 @@
                     </label>
                     <input class="form-effect__input" type="radio" id="form-effect__minus" name="form-effect" value="Скорее Отрицательное">
                     <label class="form-effect__label"  for="form-effect__minus">
-                      <span class="form-effect__label-text">Скорее Отрицательное</span>
+                      <span class="form-effect__label-text">Скорее отрицательное</span>
                     </label>
                     <input class="form-effect__input" type="radio" id="form-effect__neutral" name="form-effect"  value="Затрудняюсь ответить">
                     <label class="form-effect__label"  for="form-effect__neutral">
@@ -110,13 +110,13 @@
                     <label class="form-visited__label" for="form-visited__bridge">
                       <span class="form-visited__label-text">Мост Дьявола</span>
                     </label>
-                    <input class="form-visited__input" type="checkbox" name="form-visited" id="form-visited__hill">
-                    <label class="form-visited__label" for="form-visited__hill">
-                      <span class="form-visited__label-text">Гора-Колокол</span>
-                    </label>
                     <input class="form-visited__input" type="checkbox" name="form-visited" checked id="form-visited__park">
                     <label class="form-visited__label" for="form-visited__park">
                       <span class="form-visited__label-text">Слайд-парк</span>
+                    </label>
+                    <input class="form-visited__input" type="checkbox" name="form-visited" id="form-visited__hill">
+                    <label class="form-visited__label" for="form-visited__hill">
+                      <span class="form-visited__label-text">Гора-Колокол</span>
                     </label>
                     <input class="form-visited__input" type="checkbox" name="form-visited" checked id="form-visited__red-hills">
                     <label class="form-visited__label" for="form-visited__red-hills">

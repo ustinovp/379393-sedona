@@ -48,6 +48,12 @@
       height: 214px;
     }
   }
+
+  @media @retina {
+    .promo-text__slogan {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
 }
 
 @media @tablet {
@@ -76,13 +82,21 @@
       padding-bottom: 15px;
     }
   }
+
+  @media @retina {
+    .promo-text__slogan {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
 }
 
 @media @desktop {
   .promo-text__slogan {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
     &--lower {
       height: 301px;
-      background-image: url("../img/bg-back-desktop@1x.jpg");
+      //background-image: url("../img/bg-back-desktop@1x.jpg");
       //background-size: auto 518px;
     }
 
@@ -99,6 +113,12 @@
     &--index {
       width: 460px;
       height: 350px;
+    }
+  }
+
+  @media @retina {
+    .promo-text__slogan {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }
