@@ -28,11 +28,15 @@
     height: 158px;
     background-size: auto 389px;
   }
+
+  @media @retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .promo-text__title {
   margin: auto;
-  //padding-bottom: 20px;
+  padding-bottom: 20px;
 
   &--index {
     padding-bottom: 0;
@@ -40,7 +44,7 @@
 }
 
 @media @mobile {
-  .promo-text__logo-title {
+  .promo-text__title {
     width: 229px;
 
     &--index {
@@ -72,7 +76,7 @@
     }
   }
 
-  .promo-text__logo-title {
+  .promo-text__title {
     height: 78px;
     width: 458px;
 
@@ -106,7 +110,7 @@
     }
   }
 
-  .promo-text__logo-title {
+  .promo-text__title {
     width: 461px;
     height: 80px;
 

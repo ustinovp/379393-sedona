@@ -36,6 +36,7 @@
 
 .benefits__item-text {
   margin: 0;
+  min-width: 160px;
 
   font-size: 14px;
   line-height: 21px;
@@ -47,12 +48,21 @@
     padding: 0 20px;
   }
 
+  .benefits__number {
+    padding-top: 5px;
+  }
+
   .benefits__item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    max-height: 167px;
   }
 
   .benefits__item:last-of-type {
     border-bottom-color: transparent;
+  }
+
+  .benefits__item-text {
+    margin-bottom: 10px;
   }
 }
 
@@ -76,7 +86,14 @@
     font-size: 21px;
   }
 
-  .good-city__br {
+  .benefits__number {
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+  .benefits__br {
     display: block;
   }
 }
