@@ -53,8 +53,8 @@
 
 .good-city__benefits-item-icon {
   position: absolute;
-  left: 1px;
-  top: -5px;
+  left: 3px;
+  top: -12px;
 }
 
 .good-city__benefits-item-header {
@@ -78,6 +78,7 @@
   .good-city__title-block {
     position: relative;
     width: 100%;
+    height: 210px;
 
     &::before {
       content: "";
@@ -132,9 +133,53 @@
   .good-city__benefits-item:last-of-type {
     padding-bottom: 0;
   }
+
+  .good-city__benefits-item-header {
+    margin: 0;
+    padding-bottom: 14px;
+
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 39px;
+      height: 36px;
+    }
+  }
+
+  .good-city__benefits-item-header-icon-house::before {
+    top: -11px;
+    left: 1px;
+    background-image: url("../img/icon-house.svg");
+    background-size: 39px 36px;
+    background-repeat: no-repeat;
+  }
+
+  .good-city__benefits-item-header-icon-gift::before {
+    top: -12px;
+    left: 1px;
+    background-image: url("../img/icon-gift.svg");
+    background-size: 39px 36px;
+    background-repeat: no-repeat;
+  }
+
+  .good-city__benefits-item-header-icon-burger::before {
+    top: -7px;
+    left: -1px;
+    background-image: url("../img/icon-burger.svg");
+    background-size: 39px 36px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media @tablet {
+  .good-city__br {
+    display: block;
+  }
+
   .good-city__title-block-wraper {
     display: flex;
   }
@@ -209,6 +254,37 @@
   .good-city__benefits-item-header {
     padding-bottom: 20px;
     font-size: 21px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 78px;
+      height: 72px;
+    }
+  }
+
+  .good-city__benefits-item-header-icon-house::before {
+    top: 60px;
+    left: 89px;
+    background-image: url("../img/icon-house.svg");
+    background-size: 75px 72px;
+    background-repeat: no-repeat;
+  }
+
+  .good-city__benefits-item-header-icon-gift::before {
+    top: 60px;
+    left: 88px;
+    background-image: url("../img/icon-gift.svg");
+    background-size: 75px 64px;
+    background-repeat: no-repeat;
+  }
+
+  .good-city__benefits-item-header-icon-burger::before {
+    top: 60px;
+    left: 89px;
+    background-image: url("../img/icon-burger.svg");
+    background-size: 77px 68px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -220,5 +296,38 @@
   .good-city__benefits-item {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .good-city__benefits-item-header {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 78px;
+      height: 72px;
+    }
+  }
+
+  .good-city__benefits-item-header-icon-house::before {
+    top: 60px;
+    left: 160px;
+    background-image: url("../img/icon-house.svg");
+    background-size: 75px 72px;
+    background-repeat: no-repeat;
+  }
+
+  .good-city__benefits-item-header-icon-gift::before {
+    top: 60px;
+    left: 160px;
+    background-image: url("../img/icon-gift.svg");
+    background-size: 75px 64px;
+    background-repeat: no-repeat;
+  }
+
+  .good-city__benefits-item-header-icon-burger::before {
+    top: 60px;
+    left: 160px;
+    background-image: url("../img/icon-burger.svg");
+    background-size: 77px 68px;
+    background-repeat: no-repeat;
   }
 }

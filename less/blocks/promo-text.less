@@ -28,6 +28,10 @@
     height: 158px;
     background-size: auto 389px;
   }
+
+  @media @retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .promo-text__title {
@@ -48,12 +52,18 @@
       height: 214px;
     }
   }
+
+  @media @retina {
+    .promo-text__slogan {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
 }
 
 @media @tablet {
   .promo-text__slogan {
     height: 518px;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     &--lower {
       height: 290px;
@@ -62,11 +72,11 @@
 
     &::after {
       height: 57px;
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
   }
 
-  .promo-text__logo-title {
+  .promo-text__title {
     height: 78px;
     width: 458px;
 
@@ -76,28 +86,43 @@
       padding-bottom: 15px;
     }
   }
+
+  @media @retina {
+    .promo-text__slogan {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
 }
 
 @media @desktop {
   .promo-text__slogan {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
     &--lower {
       height: 301px;
-      background-size: auto 518px;
+      //background-image: url("../img/bg-back-desktop@1x.jpg");
+      //background-size: auto 518px;
     }
 
     &::after {
-      background-image: url("../img/bg-intro-triangle-mobile.svg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
       left: -1px;
     }
   }
 
-  .promo-text__logo-title {
+  .promo-text__title {
     width: 461px;
     height: 80px;
 
     &--index {
       width: 460px;
       height: 350px;
+    }
+  }
+
+  @media @retina {
+    .promo-text__slogan {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }
