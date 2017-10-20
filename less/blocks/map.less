@@ -1,14 +1,18 @@
 .map__wraper {
-  .container();
   position: relative;
-  //height: 180px;
+  height: 350px;
   margin-bottom: 36px;
 
   background-color: #ffffff;
-  //background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+
+  @media @retina {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+  }
+  .container();
 
   &::before {
     content: "";
@@ -32,4 +36,16 @@
   position: relative;
   z-index: 1;
   width: 100%;
+}
+
+@media @tablet {
+  .map__wraper {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+}
+
+@media @retina {
+  .map__wraper {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
 }
