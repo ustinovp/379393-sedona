@@ -37,7 +37,6 @@
   margin-bottom: 140px;
 
   background-color: #ffffff;
-  //background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 201px;
@@ -141,10 +140,6 @@
     margin-left: auto;
     margin-right: auto;
     background-image: url("../img/video-mobile@1x.jpg");
-
-    @media @retina {
-      background-image: url("../img/video-mobile@2x.jpg");
-    }
   }
 
   .video__userbar {
@@ -159,6 +154,12 @@
     background-position: center top;
     background-size: 100% 201px;
     box-sizing: border-box;
+  }
+}
+
+@media @retina {
+  .video__video-player {
+    background-image: url("../img/video-mobile@2x.jpg");
   }
 }
 
