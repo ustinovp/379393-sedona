@@ -47,10 +47,11 @@
   line-height: 21px;
 }
 
-.bridge-devil__image img {
-  display: block;
+.bridge-devil__image {
+  display: flex;
+  align-items: center;
   height: 256px;
-  width: 100%;
+  overflow: hidden;
 }
 
 @media @mobile {
@@ -73,7 +74,7 @@
   }
 
   .bridge-devil__title-block-wraper {
-    width: 33%;
+    width: calc(100% / 3);
     height: 100%;
     order: 2;
     padding: 45px;
@@ -94,7 +95,7 @@
   }
 
   .bridge-devil__image {
-    width: 67%;
+    width: calc(100% / 3 * 2);
   }
 }
 

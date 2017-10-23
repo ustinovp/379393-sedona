@@ -44,6 +44,9 @@
 }
 
 .good-city__image {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
   height: 256px;
 }
 
@@ -185,7 +188,7 @@
   }
 
   .good-city__title-block {
-    width: 33%;
+    width: calc(100% / 3);
     height: 256px;
   }
 
@@ -202,12 +205,11 @@
   }
 
   .good-city__image {
-    width: 67%;
+    width: calc(100% / 3 * 2);
   }
 
   .good-city__image img {
     width: 100%;
-    height: 256px;
   }
 
   .good-city__benefits {
@@ -219,7 +221,7 @@
   }
 
   .good-city__benefits-item {
-    width: 33%;
+    width: calc(100% / 3);
     padding: 0 45px;
     padding-top: 160px;
   }
